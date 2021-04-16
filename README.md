@@ -35,12 +35,18 @@ BB891AEC8A7DFE6164033F57AF2025BD
 
 2. Run the srm.py file. This will bring up a window of a ROM file to load, as well as three different options to take:
 Random Bosses
+
 Random Weapons
+
 Random Bosses and Weapons
 
+
 Additionally it will also have 3 different modes of randomization:
+
 Random Buster Damage
+
 Random Damage from Bosses
+
 Random Weapon Ammo Usage
 
 If none of these are checked, it will assume the default randomization method as described in the beginning.
