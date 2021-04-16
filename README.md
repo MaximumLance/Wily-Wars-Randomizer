@@ -34,6 +34,7 @@ If you aren't sure which ROM file you have, make sure it matches this MD5 checks
 BB891AEC8A7DFE6164033F57AF2025BD
 
 2. Run the srm.py file. This will bring up a window of a ROM file to load, as well as three different options to take:
+
 Random Bosses
 
 Random Weapons
