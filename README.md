@@ -62,7 +62,6 @@ If everything goes correctly, a message will appear stating it's ready. Please e
 
 
 
-
 Special Thanks:
 
 Runex and Matrixz for their notes about Wily Wars
