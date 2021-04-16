@@ -1,0 +1,37 @@
+Version 1.2 Release Notes:
+April 15th, 2021
+
+Patch Updates:
+
+- Replaced MM1 Point Balls from enemy drops with other valid items while in a MM1 stage
+
+Randomizer Updates:
+
+- Wily Stage bosses removed from list of bosses affected by Time Stopper
+
+- Added modes for randomized Buster Damage,randomized damage from bosses, and randomized weapon ammo usage
+
+	The random buster damage only affects the first 8 bosses
+
+	Damage from bosses randomized includes collision and weapon damage
+
+Logic Updates:
+
+- Wrote section to change weapon received from unused MM3 stages to nothing
+
+- Improved error checking methods for duplicate values
+
+- Wrote section to change Elecman arena if certain bosses are spawned
+
+- Updated code that referenced old state of programming to current state. This made the following changes:
+
+	Resolved bug from got weapon animation/get weapon text not being correctly reflected
+
+	Certain bosses not triggering flat arena for Flashman, Quickman, Snakeman, or Sparkman stages
+
+	A certain condition made it possible to where any boss can be defeated in a single shot by a random weapon
+
+- Adjusted MM1 boss position in MM2/MM3 stages to where they no longer spawn in mid air
+
+Thank you everyone for playing my randomizer so far, I intend to continue working on it to make it the best I can.
+-MaximumLance
