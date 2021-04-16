@@ -1,6 +1,6 @@
 # Wily-Wars-Randomizer
 
-discord: https://discord.gg/CyerVeB2RP
+Discord server: https://discord.gg/CyerVeB2RP
 
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
 
