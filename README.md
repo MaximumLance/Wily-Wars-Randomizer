@@ -54,6 +54,9 @@ Open the Logic.py file and browse to that ROM file it generated.
 If everything goes correctly, a message will appear stating it's ready. Please enjoy playing the randomizer.
 
 Special Thanks:
+
 Runex and Matrixz for their notes about Wily Wars
+
 Gateguy for creating the Simple Randomizer Maker
+
 Everyone in the discord server for joining and leaving their thoughts about the randomizer, especially those providing bug reports.
