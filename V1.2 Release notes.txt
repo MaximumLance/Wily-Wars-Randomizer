@@ -1,5 +1,17 @@
-Version 1.2 Release Notes:
-April 15th, 2021
+Version 1.21 Release Notes:
+April 25th, 2021
+
+Logic Updates:
+
+A few issues regarding the randomize ammo usage option have been resolved:
+
+- A few weapons used hardcoded values to subtract from the weapon ammo value in RAM instead of just using the value in ROM. These values have been changed to match the ones affected by the Randomizer
+
+- Spark Shot's address pointer wasn't correct, resulting in a non-functional weapon
+
+- The section that would write the random ammo usage values to ROM based on if you had Random Weapons or Random Bosses and Weapons wouldn't trigger based on the condition to look for.
+
+This also includes the following from Version 1.2:
 
 Patch Updates:
 
