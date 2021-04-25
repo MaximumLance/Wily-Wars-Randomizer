@@ -7700,6 +7700,9 @@ with open(RandomizedROM, "rb+") as ROM:
     FlagA2 = b'\x20'
     FlagB2 = b'\x40'
     FlagC2 = b'\x80'
+    Flag2 = b'/x02'
+    Flag3 = b'/x03'
+    Flag4 = b'/x04'
     if randomammo == True:
         Pointer = 0x85A10
         Seek = ROM.seek(Pointer, 0)
@@ -7949,7 +7952,19 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA2)
                     elif ammoval[x] == FlagB:
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagB2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -7959,7 +7974,19 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagC2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagC2)
                     else:
+                        ROM.write(ammoval[x])
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA1)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(ammoval[x])
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -7988,19 +8015,34 @@ with open(RandomizedROM, "rb+") as ROM:
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
                 elif pos[x][0] == "Flashman":
-                    Pointer = 0x6AA66
+                    Pointer = 0x325D2
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
-                        ROM.write(FlagA1)
+                        ROM.write(b'/x01')
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagA2)
+                        ROM.write(b'/x20')
                     elif ammoval[x] == FlagB:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == FlagC:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagB2)
-                    elif ammoval[x] == FlagC:
+                        ROM.write(FlagC2)
+                    elif ammoval[x] == Flag2:
+                        ROM.write(b'/x01')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/x20')
+                    elif ammoval[x] == Flag3:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == Flag4:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8034,7 +8076,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
                 elif pos[x][0] == "Sparkman":
-                    Pointer = 0x6AAC7
+                    Pointer = 0x6AAC6
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
                         ROM.write(FlagA1)
@@ -8218,7 +8260,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
                     
-        elif randomweapons == False:
+        if randomweapons == False:
             for x in range(8):
                 if posB[x][0] == "Cutman":
                     Pointer = 0x6AA1E
@@ -8458,7 +8500,19 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA2)
                     elif ammoval[x] == FlagB:
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagB2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8468,7 +8522,19 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagC2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagC2)
                     else:
+                        ROM.write(ammoval[x])
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA1)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(ammoval[x])
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8497,19 +8563,34 @@ with open(RandomizedROM, "rb+") as ROM:
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
                 elif posB[x][0] == "Flashman":
-                    Pointer = 0x6AA66
+                    Pointer = 0x325D2
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
-                        ROM.write(FlagA1)
+                        ROM.write(b'/x01')
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagA2)
+                        ROM.write(b'/x20')
                     elif ammoval[x] == FlagB:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == FlagC:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagB2)
-                    elif ammoval[x] == FlagC:
+                        ROM.write(FlagC2)
+                    elif ammoval[x] == Flag2:
+                        ROM.write(b'/x01')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/x20')
+                    elif ammoval[x] == Flag3:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == Flag4:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8727,9 +8808,9 @@ with open(RandomizedROM, "rb+") as ROM:
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
                     
-        elif randomweapons == True:
+        if randomweapons == True:
             for x in range(8):
-                if weapons[x][0] == "Cutman":
+                if weapons[x] == Cutbyte:
                     Pointer = 0x6AA1E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8752,7 +8833,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Gutsman":
+                elif weapons[x] == Gutsbyte:
                     Pointer = 0x6AA0E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8775,7 +8856,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Iceman":
+                elif weapons[x] == Icebyte:
                     Pointer = 0x6AA16
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8798,7 +8879,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Bombman":
+                elif weapons[x] == Bombbyte:
                     Pointer = 0x6A9FE
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8821,7 +8902,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Fireman":
+                elif weapons[x] == Firebyte:
                     Pointer = 0x6AA26
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8844,7 +8925,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Elecman":
+                elif weapons[x] == Elecbyte:
                     Pointer = 0x6AA06
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8867,7 +8948,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Bubbleman":
+                elif weapons[x] == Bubblebyte:
                     Pointer = 0x6AA4E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8890,7 +8971,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Airman":
+                elif weapons[x] == Airbyte:
                     Pointer = 0x6AA3E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8913,7 +8994,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Quickman":
+                elif weapons[x] == Quickbyte:
                     Pointer = 0x6AA56
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8936,7 +9017,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Heatman":
+                elif weapons[x] == Heatbyte:
                     Pointer = 0x6AA36
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -8959,10 +9040,17 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Woodman":
+                elif weapons[x] == Woodbyte:
                     Pointer = 0x6AA46
+                    print(Pointer)
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8972,7 +9060,19 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagB2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagB2)
                     elif ammoval[x] == FlagC:
+                        ROM.write(FlagA1)
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagC2)
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -8982,7 +9082,13 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Metalman":
+                        Pointer = 0x31D5C
+                        Seek = ROM.seek(Pointer,0)
+                        ROM.write(ammoval[x])
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(FlagA1)
+                elif weapons[x] == Metalbyte:
                     Pointer = 0x6AA6E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9005,20 +9111,35 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Flashman":
-                    Pointer = 0x6AA66
+                elif weapons[x] == Flashbyte:
+                    Pointer = 0x325D2
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
-                        ROM.write(FlagA1)
+                        ROM.write(b'/x01')
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagA2)
+                        ROM.write(b'/x20')
                     elif ammoval[x] == FlagB:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == FlagC:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
-                        ROM.write(FlagB2)
-                    elif ammoval[x] == FlagC:
+                        ROM.write(FlagC2)
+                    elif ammoval[x] == Flag2:
+                        ROM.write(b'/x01')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/x20')
+                    elif ammoval[x] == Flag3:
+                        ROM.write(b'/x00')
+                        Pointer += 1
+                        Seek = ROM.seek(Pointer, 0)
+                        ROM.write(b'/xC0')
+                    elif ammoval[x] == Flag4:
                         ROM.write(FlagA1)
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
@@ -9028,7 +9149,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Crashman":
+                elif weapons[x] == Crashbyte:
                     Pointer = 0x6AA76
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9051,7 +9172,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Sparkman":
+                elif weapons[x] == Sparkbyte:
                     Pointer = 0x6AAC7
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9074,7 +9195,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Snakeman":
+                elif weapons[x] == Snakebyte:
                     Pointer = 0x6AABE
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9097,7 +9218,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Needleman":
+                elif weapons[x] == Needlebyte:
                     Pointer = 0x6AA96
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9120,7 +9241,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Hardman":
+                elif weapons[x] == Hardbyte:
                     Pointer = 0x6AAAE
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9143,7 +9264,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Topman":
+                elif weapons[x] == Topbyte:
                     Pointer = 0x6AAB6
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9166,7 +9287,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Geminiman":
+                elif weapons[x] == Geminibyte:
                     Pointer = 0x6AAA6
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9189,7 +9310,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Magnetman":
+                elif weapons[x] == Magnetbyte:
                     Pointer = 0x6AA9E
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
@@ -9212,7 +9333,7 @@ with open(RandomizedROM, "rb+") as ROM:
                         Pointer += 1
                         Seek = ROM.seek(Pointer, 0)
                         ROM.write(FlagA1)
-                elif weapons[x][0] == "Shadowman":
+                elif weapons[x] == Shadowbyte:
                     Pointer = 0x6AACE
                     Seek = ROM.seek(Pointer, 0)
                     if ammoval[x] == FlagA:
