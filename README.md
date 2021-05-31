@@ -5,6 +5,7 @@ Discord server: https://discord.gg/CyerVeB2RP
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
 
 Currently the default values it randomizes are:
+
 Stages
 
 Doc Robot locations
