@@ -17,11 +17,14 @@ The stage that gives you the Rush Items or MM2 Items
 If you would receive the Time Stopper weapon, who is affected by it. Currently it would be one random boss and one random Doc Robot.
 
 Which weapon can break the walls normally broken by Crash Bomber or Hard Knuckle.
-	Hyper Bomb and Flash Stopper are the only two weapons incapable of breaking the crash/hard walls.
 
-Now with v2.0, MM2 can be randomized instead.
+Hyper Bomb and Flash Stopper are the only two weapons incapable of breaking the crash/hard walls.
 
-Just check the Megaman 2 Mode in the randomizer, run the Logic script,(see instructions below) and select Megaman 2 from the menu instead of Megaman 3. You can slide only in Megaman 3 stages. Also, if you have the Time Stopper, two bosses that aren't in the Wily Stages are affected by it.
+*Now with v2.0, MM2 can be randomized instead.*
+
+Just check the Megaman 2 Mode in the randomizer, run the Logic script,(see instructions below) and select Megaman 2 from the menu instead of Megaman 3. 
+
+You can slide only in Megaman 3 stages. Also, if you have the Time Stopper, two bosses that aren't in the Wily Stages are affected by it.
 
 - How to use the Randomizer:
 
@@ -37,13 +40,19 @@ If you aren't sure which ROM file you have, make sure it matches this MD5 checks
 BB891AEC8A7DFE6164033F57AF2025BD
 
 2. Run the srm.py file. This will bring up a window of a ROM file to load, as well as three different options to take:
+
 Random Bosses
+
 Random Weapons
+
 Random Bosses and Weapons
 
 Additionally it will also have 3 different modes of randomization:
+
 Random Buster Damage
+
 Random Damage from Bosses
+
 Random Weapon Ammo Usage
 
 If none of these are checked, it will assume the default randomization method as described in the beginning.
@@ -57,9 +66,13 @@ Open the Logic.py file and browse to that ROM file it generated.
 If everything goes correctly, a message will appear stating it's ready. Please enjoy playing the randomizer.
 
 Special Thanks:
+
 Runex and Matrixz for their notes about Wily Wars
+
 MottZilla for the IPS patch released roughly 12 years ago
+
 Gateguy for creating the Simple Randomizer Maker
+
 Everyone in the discord server for joining and leaving their thoughts about the randomizer, especially those providing bug reports.
 
 
