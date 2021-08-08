@@ -4,29 +4,33 @@ Discord server: https://discord.gg/CyerVeB2RP
 
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
 
+**##PLEASE update your SRM.py files(srm.py, classes.py, and gatelib.py) if you have not done so prior to version 2.0##**
+
 Currently the default values it randomizes are:
 
-Stages
+- Stages
 
-Doc Robot locations
+- Doc Robot locations
 
-Weaknesses
+- Weaknesses
 
-The stage that gives you the Rush Items or MM2 Items
+- The stage that gives you the Rush Items or MM2 Items
 
-If you would receive the Time Stopper weapon, who is affected by it. Currently it would be one random boss and one random Doc Robot.
+- If you would receive the Time Stopper weapon, who is affected by it. Currently it would be one random boss and one random Doc Robot.
 
-Which weapon can break the walls normally broken by Crash Bomber or Hard Knuckle.
+- Which weapon can break the walls normally broken by Crash Bomber or Hard Knuckle.
 
-Hyper Bomb and Flash Stopper are the only two weapons incapable of breaking the crash/hard walls.
+    Hyper Bomb and Flash Stopper are the only two weapons incapable of breaking the crash/hard walls.
 
 *Now with v2.0, MM2 can be randomized instead.*
 
-Just check the Megaman 2 Mode in the randomizer, run the Logic script,(see instructions below) and select Megaman 2 from the menu instead of Megaman 3. 
+ - Just check the Megaman 2 Mode in the randomizer, run the Logic script,(see instructions below) and select Megaman 2 from the menu instead of Megaman 3. 
 
-You can slide only in Megaman 3 stages. Also, if you have the Time Stopper, two bosses that aren't in the Wily Stages are affected by it.
+ - You can slide only in Megaman 3 stages. Also, if you have the Time Stopper, two bosses that aren't in the Wily Stages are affected by it.
 
-- How to use the Randomizer:
+Version 2.5 added the ability to Randomize Wily Stages. **Use your buster to break Guts Blocks and freeze the Fire Towers.**
+
+_**- How to use the Randomizer:**_
 
 You will need to install Python in order to run these .py scripts
 
@@ -47,13 +51,15 @@ Random Weapons
 
 Random Bosses and Weapons
 
-Additionally it will also have 3 different modes of randomization:
+Additionally it will also have 4 different modes of randomization:
 
 Random Buster Damage
 
 Random Damage from Bosses
 
 Random Weapon Ammo Usage
+
+Randomize Wily Stages
 
 If none of these are checked, it will assume the default randomization method as described in the beginning.
 
