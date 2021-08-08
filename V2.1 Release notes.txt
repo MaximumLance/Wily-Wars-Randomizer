@@ -1,6 +1,0 @@
-Version 2.1 Release Notes:
-June 22nd, 2021
-
-Recent Beta Tester feedback pointed out errors in specifc situations for the Logic and Randomizer script. These changes have been fixed to where they accurately represent the intent of what the routines were trying to do.
-
--MaximumLance
