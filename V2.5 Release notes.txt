@@ -1,3 +1,14 @@
+Version 2.52 Release Notes:
+August 9th, 2021
+
+The original patch file and logic.py file has been replaced with newer versions that resolved critical issues discovered shortly after this update.
+
+Patch:
+-MM1 Stages should take you back to the Stage Select and MM1 Wily Stages should keep you back in the castle instead of sending you back to stage select. This also happened with MM2 Wily 1.
+
+Logic:
+- An issue where the Boobeam Trap and Alien Weakness values weren't written to ROM correctly resulting in no-win scenarios
+
 Version 2.5 Release Notes:
 August 8th, 2021
 
