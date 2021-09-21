@@ -1,0 +1,35 @@
+Version 2.8 Release Notes:
+September 20th, 2021
+
+New Boss Added: Gutsman
+New Weapon Added: Super Arm
+New accessory program: Updater.py
+
+Updater is a python script you can run to have the newest files downloaded to your device without having to check the github. Run it like any other python script and it will tell you if it updated your files or not. It can even redownload the files if you don't have them.
+
+Patch:
+- Made changes to compensate for Gutsman to be in other arenas besides his stage and MM1 Wily 4 refight. Previously he was missing the ability to throw rocks at the player and would get stuck waiting for one to fall from the ceiling.
+
+- Changed how Super Arm fundamentally works. Originally it required a large piece of rubble nearby to pick up and throw. Now you don't have to be near one. Just press the shoot button to magically grab one out of thin air. I have increased the base cost of ammunition to 2 for this weapon.
+
+I've removed the stone blocks from Cutman's stage since they are no longer necessary.
+
+- Fixed an issue where completing MM1 Wily 1 would send the player back to the file select screen instead of continuing
+
+- Fixed an issue where weapons weren't refilled upon entering the first wily stage.
+
+- Improved SRAM loading routines to where instead of looking through the boss and enabling the weapon, it enables the weapon based on the stage generated in the randomizer. 
+
+Originally when you selected a stage it was either that particular robot master's level or not. Now every robot master has an equal opportunity to appear in other places. Additionally, the stages you clear are in the game you play instead of others.
+
+Logic:
+- Removed dedicated positions for native robot masters in MM2 and MM3. With the new SRAM routines making this adjustment was no longer necessary.
+
+- Added a routine to prevent Cutman from appearing in Needleman's stage. His rolling cutter would not travel away and instead stay with Cutman so he could not attack with it.
+
+- Fixed an issue where get weapon text for MM3 would sometimes get cut off at the end.
+
+- Added routines specifically for Gutsman's data for appearing in other stages and wily capsule refight
+
+Thank you everyone for playing my randomizer so far, I intend to continue working on it to make it the best I can.
+-MaximumLance
