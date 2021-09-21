@@ -6,6 +6,8 @@ Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
 
 **##PLEASE update your SRM.py files(srm.py, classes.py, and gatelib.py) if you have not done so prior to version 2.0##**
 
+You can even use the Updater.py file provided to get the newest files
+
 Currently the default values it randomizes are:
 
 - Stages
