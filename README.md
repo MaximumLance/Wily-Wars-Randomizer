@@ -5,6 +5,7 @@ Discord server: https://discord.gg/CyerVeB2RP
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
 
 Currently the default values it randomizes are:
+
 Stages, Bosses, and Weapons Received
 
 Doc Robot locations
@@ -34,6 +35,7 @@ Use Lunar IPS or another ips patching program to apply the patch.
 If you want to keep a clean file, make a copy of the ROM file you want to apply the patch to.
 
 If you aren't sure which ROM file you have, make sure it matches this MD5 checksum:
+
 BB891AEC8A7DFE6164033F57AF2025BD
 
 2. Run the Wily Wars Randomizer.exe file. There will be a few windows that pop up.
@@ -45,19 +47,30 @@ If you do, a black window will briefly appear and then it will either tell you U
 3. After that, a new window will appear to say that it is running the randomizer program. Then another window will appear that will allow you to select the different options on how you want to have your seed created.
 
 This window will have:
+
 Randomize Bosses Only
+
 Randomize Weapons Only
+
 Randomize Stages Only
 
 Additionally it will also have 4 different modes of randomization:
+
 Random Damage from Bosses
+
 Random Weapon Ammo Usage
+
 Megaman 2 Mode
+
 Randomize Wily Stages
 
+
 As well as 3 options to change different modifications of the randomized seed:
+
 Skip Wily Castle Intro
+
 Disable Lives Refill
+
 Disable Time Stopper Mod
 
 If none of these are checked, it will assume the default randomization method as described in the beginning.
@@ -79,7 +92,11 @@ Once it's done, it will state READY. Then a new prompt will appear asking if the
 You can now play the randomized ROM. Please enjoy playing the randomizer.
 
 Special Thanks:
+
 Runex and Matrixz for their notes about Wily Wars
+
 MottZilla for the IPS patch released roughly 15 years ago
+
 Gateguy for creating the Simple Randomizer Maker
+
 Everyone in the discord server for joining and leaving their thoughts about the randomizer, especially those providing bug reports.
