@@ -1,35 +1,85 @@
-Version 2.8 Release Notes:
-September 20th, 2021
+Version 3 Release Notes:
+December 13, 2024
 
-New Boss Added: Gutsman
-New Weapon Added: Super Arm
-New accessory program: Updater.py
+I can't believe it's been over 3 years since the last update.
 
-Updater is a python script you can run to have the newest files downloaded to your device without having to check the github. Run it like any other python script and it will tell you if it updated your files or not. It can even redownload the files if you don't have them.
+In this update, I changed how the user interacts with the randomizer. You shouldn't be required to install python anymore. Instead, everything now is linked to one simple exe file that handles everything.
+
+I also made a lot of changes to the randomizer itself:
+
+Randomizer:
+- Changed the way weaknesses are chosen and assigned.
+Previously damage values were randomly chosen between 1,2,4,7, or (reflected)
+
+Now everything will do atleast 1-2 damage with the weakness doing 4-7 damage, with some exceptions
+
+The bosses have a primary weakness(5-7 damage) and a secondary weakness(4 damage)
+
+The robot masters and Doc Robots have a weakness chain to follow now.
+
+- Buster damage against bosses is now randomized. It will either do 1 or 2 damage.
+
+- Randomized Ammo Consumption is now going to have more options. Originally it was only a few numbers with large changes, but I have implemented several more values for more randomness. The new values start from 1/4 and scale up to 3 1/2
+
+- Each option now has a tooltip if you hover over the option that gives you a brief description of the option.
 
 Patch:
-- Made changes to compensate for Gutsman to be in other arenas besides his stage and MM1 Wily 4 refight. Previously he was missing the ability to throw rocks at the player and would get stuck waiting for one to fall from the ceiling.
+- Time Stopper received a mod in which instead of draining the whole energy bar, it will last for
+only 3 seconds. This part can be undone by selecting the Disable Time Stopper Mod while making a seed.
 
-- Changed how Super Arm fundamentally works. Originally it required a large piece of rubble nearby to pick up and throw. Now you don't have to be near one. Just press the shoot button to magically grab one out of thin air. I have increased the base cost of ammunition to 2 for this weapon.
+I also lowered the ammo consumption to 1/2. This applies even in randomized ammo consumption.
 
-I've removed the stone blocks from Cutman's stage since they are no longer necessary.
+It will also do more damage over time - about 30% faster at draining the opponent's health.
 
-- Fixed an issue where completing MM1 Wily 1 would send the player back to the file select screen instead of continuing
+Currently if you are in MM2, it affects 2 different bosses. In MM3, it affects 1 boss and 1 Doc Robot.
 
-- Fixed an issue where weapons weren't refilled upon entering the first wily stage.
+- Lives will be refilled to 2 if you have less than 2 in between stages, except for the Wily Stages. This can also be disabled by selecting Disable Lives Refill.
 
-- Improved SRAM loading routines to where instead of looking through the boss and enabling the weapon, it enables the weapon based on the stage generated in the randomizer. 
+- Small health and weapon energy items give you twice as much energy now - 4 instead of 2.
 
-Originally when you selected a stage it was either that particular robot master's level or not. Now every robot master has an equal opportunity to appear in other places. Additionally, the stages you clear are in the game you play instead of others.
+- Reduced time in MM3 for Stage end sequence to finish
+
+- Removed Guts Blocks from all Wily Stages except for MM1 Wily 3. They cannot be destroyed.
+Also, Removed a guts block from Elecman's stage that was blocking one of the paths near the top of the tower.
+
+- Fire Towers now freeze from a single random weapon. They won't freeze for the Time Stopper, Hyper Bomb, or Crash Bomber.
+
+- Redesigned MM1 Wily 1 Entrance to have weapon energy drops to compensate for the different modes and rotation in randomized wily stages
+
+- Reworked the Show Hidden Skull code to be more accurate.
+
+- Doc Robots can be freely interchanged now. Previously they were set in two groups based on what part of the level they were in. Group A are the ones that you encounter first while Group B is the ones you encounter second. If you mixed these up, the level could either end early or not end at all.
+
+I've made it so no matter which one is where, the level will still continue or end as normal.
+
+- Weapon Ammo consumption has been changed for a few weapons:
+
+Reduced:
+Hyper Bomb: Normal: 2 New: 1
+Atomic Heat: Normal: 1:6:10 New: 1.25:3:6
+Time Stopper: Normal: 1 New: .5
+Crash Bomber: Normal: 4 New: 3
+Magnet Missile: Normal: 2 New: 1.5
+Hard Knuckle: Normal: 2 New: 1.5
+
+Increased:
+Thunder Beam: Normal: 1 New: 2
+Fire Storm: Normal: 1 New: 2
+Quick Boomerang: Normal: .125 New: .25
+Metal Blade: Normal: .25  New: 1 
+Spark Shot: Normal: 1/2 New: 1 
+
+- Updated Copyright Year on Main Menu
 
 Logic:
-- Removed dedicated positions for native robot masters in MM2 and MM3. With the new SRAM routines making this adjustment was no longer necessary.
 
-- Added a routine to prevent Cutman from appearing in Needleman's stage. His rolling cutter would not travel away and instead stay with Cutman so he could not attack with it.
+- Default mode is now Random Bosses and Weapons.
 
-- Fixed an issue where get weapon text for MM3 would sometimes get cut off at the end.
+- If you encounter Geminiman in Elecman's stage, the arena will be now flat.
 
-- Added routines specifically for Gutsman's data for appearing in other stages and wily capsule refight
+- In Geminiman 2 Stage, the arena will be flat based on which Doc Robot will be there.
 
-Thank you everyone for playing my randomizer so far, I intend to continue working on it to make it the best I can.
+
+
+As always, your time spent playing and feedback given has been appreciated.
 -MaximumLance
