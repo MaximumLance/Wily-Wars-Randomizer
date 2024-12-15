@@ -1,5 +1,7 @@
 # Wily-Wars-Randomizer
 
+Windows Defender is marking this as a false positive. Files were scanned with different virus scanners to ensure integrity.
+
 Discord server: https://discord.gg/CyerVeB2RP
 
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
