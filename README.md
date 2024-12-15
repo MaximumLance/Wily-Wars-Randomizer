@@ -2,6 +2,8 @@
 
 Windows Defender is marking this as a false positive. Files were scanned with different virus scanners to ensure integrity.
 
+Because the executables are unsigned, you may get a blue pop up from Microsft Defender SmartScreen asking if you want to run this. Click more info then click Run Anyway.
+
 Discord server: https://discord.gg/CyerVeB2RP
 
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
@@ -92,6 +94,10 @@ It will ask for a ROM file to open. Load the ROM file generated from the previou
 Once it's done, it will state READY. Then a new prompt will appear asking if there are any other ROMs to run this script for. If there are, click Yes and it will prompt for more files to open. If not, click No and that will be the end.
 
 You can now play the randomized ROM. Please enjoy playing the randomizer.
+
+If you do not see a message stating READY, then something went wrong with the Logic script. Please let me know of the seed # generated and I will work to update the script ASAP.
+
+You can find the seed # in the name of the file at the end. It's usually a string of 7 or 8 characters long.
 
 Special Thanks:
 
