@@ -1,7 +1,5 @@
 # Wily-Wars-Randomizer
 
-Windows Defender is marking this as a false positive. Files were scanned with different virus scanners to ensure integrity.
-
 Because the executables are unsigned, you may get a blue pop up from Microsft Defender SmartScreen asking if you want to run this. Click more info then click Run Anyway.
 
 Discord server: https://discord.gg/CyerVeB2RP
