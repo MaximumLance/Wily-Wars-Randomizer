@@ -67,13 +67,15 @@ Megaman 2 Mode
 Randomize Wily Stages
 
 
-As well as 3 options to change different modifications of the randomized seed:
+As well as 4 options to change different modifications of the randomized seed:
 
 Skip Wily Castle Intro
 
 Disable Lives Refill
 
 Disable Time Stopper Mod
+
+Disable Energy Balancer Mod
 
 If none of these are checked, it will assume the default randomization method as described in the beginning.
 
