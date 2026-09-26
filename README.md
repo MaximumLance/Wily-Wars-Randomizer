@@ -2,6 +2,9 @@
 
 Because the executables are unsigned, you may get a blue pop up from Microsft Defender SmartScreen asking if you want to run this. Click more info then click Run Anyway.
 
+**Please consider checking out the new version of the randomizer on my github: The Genesis Paradox! It has more features but is currently still in Beta Testing.**
+https://github.com/MaximumLance/The-Genesis-Paradox
+
 Discord server: https://discord.gg/CyerVeB2RP
 
 Hello, and thank you for playing my Megaman: The Wily Wars randomizer.
